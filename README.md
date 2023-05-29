@@ -49,7 +49,8 @@ I seek field related to the automation and implementation of any tool or applica
 
 <br>
 
-[![Rafael's github activity graph](https://github-readme-activity-graph.cyclic.app/graph?username=RaffaGR&theme=github-compact)](https://github.com/RaffaGR/github-readme-activity-graph)
+[![RaffaGR](https://github-readme-activity-graph.vercel.app/graph?username=RaffaGR&theme=github-compact)](https://github.com/RaffaGR/github-readme-activity-graph)
+
 
  <img width=100% src="https://capsule-render.vercel.app/api?type=waving&animation=twinkling&color=00E617&section=footer" />
 
