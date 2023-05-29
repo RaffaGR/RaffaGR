@@ -1,7 +1,7 @@
 <div align=center>
   <img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=00F22C&animation=twinkling" />
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=01E62C&size=35&center=true&vCenter=true&width=1000&lines=Hi+Hi;I'm+Rafael+Viana+Ferreira;Welcome+to+my+github!;Estou+Estudando+no+Instituto+Proa)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=01E62C&size=35&center=true&vCenter=true&width=1000&lines=Hi+Hi;I'm+Rafael+Viana+Ferreira;Welcome+to+my+github!;I+am+studying+at+the+institute+Proa)](https://git.io/typing-svg)
 
 It would be interesting to work with File Management Back-end<br>
 I seek field related to the automation and implementation of any tool or application, always wanting to become someone even better.<br>
