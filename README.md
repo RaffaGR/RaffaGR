@@ -51,7 +51,12 @@ I seek field related to the automation and implementation of any tool or applica
 
 [![RaffaGR](https://github-readme-activity-graph.vercel.app/graph?username=RaffaGR&theme=github-compact)](https://github.com/RaffaGR/github-readme-activity-graph)
 
+<div align="center">
+  <a href="https://github.com/Entre-Linhas" alt='Conheça o Entre Linhas' target="_blank"><h3>Conheça o Entre Linhas</h3></a>
+  <a href="https://github.com/Entre-Linhas" alt='Conheça o Entre Linhas' target="_blank"><img src="https://github.com/Entre-Linhas/.github/blob/main/profile/Logo.png" alt='Entre Linhas' width="50%"></a>
+</div>
 
  <img width=100% src="https://capsule-render.vercel.app/api?type=waving&animation=twinkling&color=00E617&section=footer" />
+
 
 </div>
