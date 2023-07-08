@@ -36,6 +36,7 @@ I seek field related to the automation and implementation of any tool or applica
 
 </div>
 <div style="display: inline_block" align="center"><br>
+  <img align="center" alt="AWS" width="45" height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
   <img align="center" alt="Java" width="30" height="45" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
   <img align="center" alt="HTML" width="30" height="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" />
   <img align="center" alt="CSS" width="35" height="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" />
