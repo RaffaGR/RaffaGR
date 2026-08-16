@@ -27,12 +27,12 @@ I seek field related to the automation and implementation of any tool or applica
     <img width="50" height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" />
 </div>
 
-<div align="center">
+<!-- <div align="center">
   <br>
   <a href="https://github.com/RaffaGR">
   <img height="160em" src="https://github-readme-stats-sigma-five.vercel.app/api?username=RaffaGR&show_icons=true&count_private=true&hide=contribs&bg_color=0,006B0E,101c25&icon_color=b7f2a7&title_color=09A3EB&text_color=FFF&border_color=044B6B&hide_border=false&border_radius=8&locale=pt-BR" width="51%"/>
   <img height="160em" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=RaffaGR&layout=compact&langs_count=7&theme=tokyonight" width="48%" />
-</div>
+</div> -->
 
 </div>
 <div style="display: inline_block" align="center"><br>
