@@ -13,9 +13,13 @@ jobs:
     permissions:
       contents: write
     steps:
+      # 1. Clona o repositório com todo o histórico Git
       - name: Checkout repository
         uses: actions/checkout@v4
-      # Cartão 1: Cima Esquerda (Visão Geral de Commits e Atividade)
+        with:
+          fetch-depth: 0
+
+      # Cartão 1: Cima Esquerda (Visão Geral)
       - name: Top Left - Overview Stats
         uses: lowlighter/metrics@latest
         with:
@@ -26,7 +30,7 @@ jobs:
           base: activity, community
           config_theme: tokyonight
 
-      # Cartão 2: Cima Direita (Linguagens Mais Usadas)
+      # Cartão 2: Cima Direita (Linguagens)
       - name: Top Right - Languages
         uses: lowlighter/metrics@latest
         with:
@@ -40,6 +44,22 @@ jobs:
           plugin_languages_details: percentage
           plugin_languages_colors: github
           plugin_languages_limit: 8
+
+      # Cartão 3: Embaixo (Gráfico de Ondas Verde - Tema github-compact)
+      - name: Bottom - Activity Graph
+        uses: maurodesouza/github-readme-activity-graph-action@v1
+        with:
+          username: RaffaGR
+          options: "theme=github-compact&area=true&hide_border=true"
+          output_path: metrics-bottom.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+
+      # 5. Salva e envia o metrics-bottom.svg com rebase automático para evitar conflito
+      - name: Commit and push activity graph
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update metrics-bottom.svg"
+          file_pattern: "metrics-bottom.svg"
 
       # Cartão 3: Embaixo (Gráfico Isométrico de Contribuições cobrindo a largura)
       # - name: Bottom - Isocalendar
@@ -104,19 +124,5 @@ jobs:
       #     hide_border: true
       #     output_path: metrics-bottom.svg
       #     token: ${{ secrets.METRICS_TOKEN }}
-
-      # Cartão 3: Embaixo (Gráfico de Ondas Verde - Tema github-compact)
-      - name: Bottom - Activity Graph
-        uses: maurodesouza/github-readme-activity-graph-action@v1
-        with:
-          username: RaffaGR
-          options: "theme=github-compact&area=true&hide_border=true"
-          output_path: metrics-bottom.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-      - name: Push metrics-bottom.svg to repository
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add metrics-bottom.svg
           git commit -m "Update metrics-bottom.svg" || exit 0
           git push
