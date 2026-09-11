@@ -40,7 +40,20 @@ jobs:
           plugin_languages_limit: 8
 
       # Cartão 3: Embaixo (Gráfico Isométrico de Contribuições cobrindo a largura)
-      - name: Bottom - Isocalendar
+      # - name: Bottom - Isocalendar
+      #   uses: lowlighter/metrics@latest
+      #   with:
+      #     filename: metrics-bottom.svg
+      #     token: ${{ secrets.METRICS_TOKEN }}
+      #     user: RaffaGR
+      #     template: classic
+      #     base: ""
+      #     config_theme: tokyonight
+      #     plugin_isocalendar: yes
+      #     plugin_isocalendar_duration: full-year
+
+      # Cartão 3: Embaixo (Substitui o Activity Graph com gráficos de hábitos/commits)
+      - name: Bottom - Activity & Habits
         uses: lowlighter/metrics@latest
         with:
           filename: metrics-bottom.svg
@@ -49,5 +62,8 @@ jobs:
           template: classic
           base: ""
           config_theme: tokyonight
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
+          plugin_habits: yes
+          plugin_habits_from: 200 # Analisa seus últimos 200 commits
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes # Gera o gráfico visual de barras
