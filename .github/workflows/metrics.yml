@@ -13,6 +13,8 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
       # Cartão 1: Cima Esquerda (Visão Geral de Commits e Atividade)
       - name: Top Left - Overview Stats
         uses: lowlighter/metrics@latest
@@ -108,9 +110,7 @@ jobs:
         uses: maurodesouza/github-readme-activity-graph-action@v1
         with:
           username: RaffaGR
-          theme: github-compact
-          area: true
-          hide_border: true
+          options: "theme=github-compact&area=true&hide_border=true"
           output_path: metrics-bottom.svg
           token: ${{ secrets.METRICS_TOKEN }}
       - name: Push metrics-bottom.svg to repository
