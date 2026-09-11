@@ -33,6 +33,20 @@ I seek field related to the automation and implementation of any tool or applica
   <img height="160em" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=RaffaGR&layout=compact&langs_count=7&theme=tokyonight" width="48%" />
 </div> 
 -->
+<!-- Substituindo estatistica que estavam instaveis - 1 e 2 Lado a lado -->
+<div align="center">
+  <br>
+  <table border="0">
+    <tr>
+      <td align="center" valign="top">
+        <img src="./metrics-top-left.svg" width="400" alt="Estatísticas Gerais" />
+      </td>
+      <td align="center" valign="top">
+        <img src="./metrics-top-right.svg" width="400" alt="Linguagens Mais Usadas" />
+      </td>
+    </tr>
+  </table>
+</div>
 
 <div style="display: inline_block" align="center"><br>
   <img align="center" alt="AWS" width="45" height="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" />
@@ -51,7 +65,11 @@ I seek field related to the automation and implementation of any tool or applica
 
 <br>
 
-[![RaffaGR](https://github-readme-activity-graph.vercel.app/graph?username=RaffaGR&theme=github-compact)](https://github.com/RaffaGR/github-readme-activity-graph)
+<!-- [![RaffaGR](https://github-readme-activity-graph.vercel.app/graph?username=RaffaGR&theme=github-compact)](https://github.com/RaffaGR/github-readme-activity-graph) -->
+<!-- Substituindo estatistica que estavam instaveis - 3 -->
+<div align="center">
+  <img src="./metrics-bottom.svg" width="810" alt="Gráfico de Hábitos e Atividades" />
+</div>
 
 <div align="center">
   <a href="https://github.com/Entre-Linhas" alt='Conheça o Entre Linhas' target="_blank"><h3>Conheça o Entre Linhas</h3></a>
