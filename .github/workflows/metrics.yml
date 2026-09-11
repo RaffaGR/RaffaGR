@@ -124,5 +124,4 @@ jobs:
       #     hide_border: true
       #     output_path: metrics-bottom.svg
       #     token: ${{ secrets.METRICS_TOKEN }}
-          git commit -m "Update metrics-bottom.svg" || exit 0
-          git push
+      
