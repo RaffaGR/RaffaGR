@@ -2,8 +2,8 @@ name: Generate Metrics
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Atualiza automaticamente todo dia à meia-noite
-  workflow_dispatch: # Permite rodar manualmente a qualquer momento
+    - cron: "0 0 * * *"
+  workflow_dispatch:
   push:
     branches: ["main", "master"]
 
@@ -18,8 +18,16 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           user: RaffaGR
           template: classic
-          base: header, activity, community, repositories, metadata
+          
+          # Remove o cabeçalho (nome, foto, data) e dados desnecessários de comunidade/espaço
+          base: activity
+          
+          # Aplica o tema escuro oficial
+          config_theme: tokyonight
+          
+          # Configuração do gráfico de Linguagens (Limpo e em Porcentagem)
           plugin_languages: yes
-          plugin_languages_details: percentage, bytes-size
+          plugin_languages_details: percentage
           plugin_languages_colors: github
           plugin_languages_limit: 8
+          plugin_languages_sections: most-used
