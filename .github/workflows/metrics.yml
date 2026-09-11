@@ -66,7 +66,45 @@ jobs:
       #     plugin_isocalendar_duration: full-year
 
       # Cartão 3: Embaixo (Performance e Auditoria do Portfólio)
-      - name: Bottom - PageSpeed
+      # - name: Bottom - PageSpeed
+      #   uses: lowlighter/metrics@latest
+      #   with:
+      #     filename: metrics-bottom.svg
+      #     token: ${{ secrets.METRICS_TOKEN }}
+      #     user: RaffaGR
+      #     template: classic
+      #     base: ""
+      #     config_theme: tokyonight
+      #     plugin_pagespeed: yes
+      #     plugin_pagespeed_url: https://rafa-dev-atomic.vercel.app/ 
+      #     plugin_pagespeed_detailed: yes
+
+      # Cartão 3: Calendário 2D Clean
+      # - name: Bottom - Full Calendar
+      #   uses: lowlighter/metrics@latest
+      #   with:
+      #     filename: metrics-bottom.svg
+      #     token: ${{ secrets.METRICS_TOKEN }}
+      #     user: RaffaGR
+      #     template: classic
+      #     base: ""
+      #     config_theme: tokyonight
+      #     plugin_calendar: yes
+      #     plugin_calendar_limit: 1
+
+      # Cartão 3: Embaixo (Gráfico de Ondas de Atividade)
+      # - name: Bottom - Activity Graph
+      #   uses: maurodesouza/github-readme-activity-graph-action@v1
+      #   with:
+      #     username: RaffaGR
+      #     theme: tokyonight
+      #     area: true
+      #     hide_border: true
+      #     output_path: metrics-bottom.svg
+      #     token: ${{ secrets.METRICS_TOKEN }}
+
+      # Cartão 3: Embaixo (Atividades e Commits Recentes em linhas)
+      - name: Bottom - Activity
         uses: lowlighter/metrics@latest
         with:
           filename: metrics-bottom.svg
@@ -74,7 +112,8 @@ jobs:
           user: RaffaGR
           template: classic
           base: ""
-          config_theme: tokyonight
-          plugin_pagespeed: yes
-          plugin_pagespeed_url: https://rafa-dev-atomic.vercel.app/ 
-          plugin_pagespeed_detailed: yes
+          config_theme: github-compact
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 14
+          plugin_activity_filter: push, issue, pr
