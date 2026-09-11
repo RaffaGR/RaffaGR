@@ -13,21 +13,41 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      # Cartão 1: Cima Esquerda (Visão Geral de Commits e Atividade)
+      - name: Top Left - Overview Stats
+        uses: lowlighter/metrics@latest
         with:
+          filename: metrics-top-left.svg
           token: ${{ secrets.METRICS_TOKEN }}
           user: RaffaGR
           template: classic
-          
-          # Remove o cabeçalho (nome, foto, data) e dados desnecessários de comunidade/espaço
-          base: activity
-          
-          # Aplica o tema escuro oficial
+          base: activity, community
           config_theme: tokyonight
-          
-          # Configuração do gráfico de Linguagens (Limpo e em Porcentagem)
+
+      # Cartão 2: Cima Direita (Linguagens Mais Usadas)
+      - name: Top Right - Languages
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics-top-right.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: RaffaGR
+          template: classic
+          base: ""
+          config_theme: tokyonight
           plugin_languages: yes
           plugin_languages_details: percentage
           plugin_languages_colors: github
           plugin_languages_limit: 8
-          plugin_languages_sections: most-used
+
+      # Cartão 3: Embaixo (Gráfico Isométrico de Contribuições cobrindo a largura)
+      - name: Bottom - Isocalendar
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics-bottom.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: RaffaGR
+          template: classic
+          base: ""
+          config_theme: tokyonight
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
